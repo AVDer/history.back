@@ -1,5 +1,5 @@
 // Require the mongoose library
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 // Define the leader's database schema
 const leaderSchema = new mongoose.Schema(
@@ -40,4 +40,4 @@ const leaderSchema = new mongoose.Schema(
 // Define the 'Leader' model with the schema
 const Leader = mongoose.model('Leader', leaderSchema);
 // Export the module
-module.exports = Leader;
+export default Leader;

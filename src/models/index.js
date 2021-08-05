@@ -1,5 +1,5 @@
-const Leader = require('./leader');
-const User = require('./user');
+import Leader from './leader.js';
+import User from './user.js';
 
 
 const models = {
@@ -7,4 +7,4 @@ const models = {
     User
 };
 
-module.exports = models;
+export default models;

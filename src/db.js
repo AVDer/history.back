@@ -1,7 +1,7 @@
 // Require the mongoose library
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-module.exports = {
+export default {
     connect: DB_HOST => {
         // Use the Mongo driver's updated URL string parser
         mongoose.set('useNewUrlParser', true);

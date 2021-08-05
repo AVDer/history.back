@@ -1,9 +1,11 @@
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const { AuthenticationError, ForbiddenError } = require('apollo-server-express');
-require('dotenv').config();
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import { AuthenticationError, ForbiddenError } from 'apollo-server-express';
+import dotenv from 'dotenv';
 
-module.exports = {
+dotenv.config();
+
+export default {
 
     newLeader: async (parent, args, { models }) => {
         console.log(args);
