@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { AuthenticationError, ForbiddenError } from 'apollo-server-express';
+import { AuthenticationError } from 'apollo-server-express';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -9,7 +9,7 @@ export default {
 
     newLeader: async (parent, args, { models }) => {
         console.log(args);
-        return await models.Leader.create({
+        return models.Leader.create({
             nameLatin: args.name,
             nameOriginal: args.name
         });

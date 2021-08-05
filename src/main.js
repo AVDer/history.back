@@ -5,7 +5,7 @@ import models from './models/index.js'
 import helmet from 'helmet';
 import cors from 'cors';
 import express from 'express';
-import { ApolloServer, gql } from 'apollo-server-express';
+import { ApolloServer } from 'apollo-server-express';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 
 dotenv.config();
