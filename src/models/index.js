@@ -1,10 +1,7 @@
 import Leader from './leader.js';
 import User from './user.js';
 
-
-const models = {
+export default {
     Leader,
     User
 };
-
-export default models;

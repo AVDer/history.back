@@ -37,7 +37,5 @@ const leaderSchema = new mongoose.Schema(
     }
 );
 
-// Define the 'Leader' model with the schema
-const Leader = mongoose.model('Leader', leaderSchema);
-// Export the module
-export default Leader;
+// Export the the 'Leader' model with the schema
+export default mongoose.model('Leader', leaderSchema);
